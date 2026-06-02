@@ -5,8 +5,8 @@ import os
 import time
 from telebot import types
 
-BOT_TOKEN = "8802129546:AAF2jnme_LeypY8mdkrs50dUlZDZ-WqYW6w"
-API_KEY = "6b0b92518c3993a960345951"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_KEY = os.environ.get("API_KEY")
 ADMIN_ID = 6788585905
 
 bot = telebot.TeleBot(BOT_TOKEN)
